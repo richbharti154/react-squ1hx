@@ -122,3 +122,24 @@ body {
 .slug{
   font-size: 1.3rem;
 }
+@media only screen and(max-width:450px){
+  body {
+    background-image:url('https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-122.jpg?w=2000') ;
+  }
+  .mapborder {
+    text-align: center;
+    background-color:lightpink;
+    height: 5rem;
+    width: 20rem;
+    margin-left: 40rem;
+    margin-bottom: 40rem;
+  
+  }
+  .mainContainer {
+    width: 45%;
+    height: 30vh;
+    padding-top: 5rem;
+    margin-left: 60rem;
+  }
+
+}

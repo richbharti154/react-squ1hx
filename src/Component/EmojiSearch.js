@@ -4,47 +4,51 @@ import style from './EmojiSearch.module.css';
 import Input from '../Atom/Input';
 import Button from '../Atom/Button';
 import Navbar from './Navbar';
+import {useRecoilState} from 'recoil';
+import {emojiData} from '../Atom/Atom'
 
 export default function EmojiSearch() {
   const [search, setSearch] = useState('');
   const [emoji, setEmoji] = useState([]);
+  const[dataemoji,setDataEmoji]=useRecoilState(emojiData)
   async function CallApi() {
     const response = await fetch(
       'https://emoji-api.com/emojis?access_key=81065a650396db16531a770cc3a3c62f7841ad19'
     );
     const data = await response.json();
+   setDataEmoji(data)
     setEmoji(data);
     console.log(data);
   }
   useEffect(() => {
     CallApi();
   }, []);
-
+console.log(dataemoji,'from recoil')
   function handleClick() {
     alert('show the copy😁🐨😎🤩');
   }
   function handleButton() {
     alert('sort smiling');
 
-    let smilingface = emoji.filter((x) => x.slug.includes('smiling'));
+    let smilingface = dataemoji.filter((x) => x.slug.includes('smiling'));
     console.log(smilingface);
     setEmoji(smilingface);
   }
   function handlebutton1() {
     alert('show all person');
-    let person1 = emoji.filter((x) => x.slug.includes('grinning'));
+    let person1 = dataemoji.filter((x) => x.slug.includes('grinning'));
     console.log(person1);
     setEmoji(person1);
   }
   function handlebutton2() {
     alert('show all sad');
-    let sad1 = emoji.filter((x) => x.slug.includes('person'));
+    let sad1 = dataemoji.filter((x) => x.slug.includes('person'));
     console.log(sad1);
     setEmoji(sad1);
   }
   function handlebutton3() {
     alert('show taxi');
-    let taxi1 = emoji.filter((x) => x.slug.includes('heart'));
+    let taxi1 = dataemoji.filter((x) => x.slug.includes('heart'));
     console.log(taxi1);
     setEmoji(taxi1);
   }

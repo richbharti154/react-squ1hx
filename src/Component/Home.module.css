@@ -13,7 +13,7 @@
 .bg{
   margin-top: 12em;
   border: 2px solid black;
-  color: white;
+  
   font-weight: bolder;
   font-family: cursive;
   display: flex;
@@ -25,11 +25,23 @@
   color: #fff;
   text-align: center;
   font-size: 26px;
-  color: #fff;
-  text-align: center;
-  font-size: 26px;
+ 
 
   /* height: 88vh; */
   text-shadow: 2px 2px rgb(221, 33, 33);
 }
+ @media only screen and(max-width:450px){
+  .wrapper{
+  background-image:url('https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/21/Pictures/_d6c5a6cc-8cab-11e8-a23e-bc16ac6b2c17.jpg');
+  background-repeat: no-repeat;
+   background-size: cover; 
+  height: 100vh;
+  width: 100%; 
+  background-attachment: fixed;
+  }
+ 
+ 
+  
+} 
+
 

@@ -19,3 +19,26 @@ background-color: rgb(174, 155, 190);
 
 border: 1px solid ;
 }
+@media only screen and(max-width:450px){
+  .wrapper{
+    width: 50%;
+    height: 3rem;
+    background-color: rgb(252, 192, 192);
+    gap:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+  .navabar{
+    padding: 5px;
+  
+  text-decoration: none;
+
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: rgb(174, 155, 190);
+  
+  border: 1px solid ;
+  }
+}
