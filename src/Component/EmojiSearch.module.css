@@ -26,7 +26,7 @@ body {
   margin-left: 2.5rem;
   margin-top: 3rem;
   color: black;
-  font-size: 1.3rem;
+  
 }
 
 
@@ -55,6 +55,8 @@ body {
 .mapborder {
   text-align: center;
   background-color:lightpink;
+  height: 5rem;
+  width: 30rem;
 
 }
 
@@ -116,4 +118,7 @@ body {
   margin-bottom: 2rem;
   margin-top: 1rem; 
 
+}
+.slug{
+  font-size: 1.3rem;
 }

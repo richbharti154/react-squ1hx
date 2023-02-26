@@ -68,4 +68,8 @@ padding-left: 1rem;
   color: black;
   background-color: greenyellow;
 }
-
+.Emoji{
+  margin-left: 2rem;
+  background-color: greenyellow;
+  border-radius: 5px;
+}

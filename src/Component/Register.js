@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
  import Navbar from './Navbar'
+ import {NavLink} from 'react-router-dom'
 import Input from '../Atom/Input';
 import Button from '../Atom/Button';
 import  RegisterStyle from './Register.module.css'
@@ -110,6 +111,7 @@ export default function Register() {
               </p>
             </span>
             <Button text="Sumbit" className={RegisterStyle.btn} />
+            <NavLink className={RegisterStyle.Emoji} to ='/emoji'>😀Emoji</NavLink>
             </form>
           </div>
           </div>
