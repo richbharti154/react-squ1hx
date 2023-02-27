@@ -5,7 +5,7 @@ import Input from '../Atom/Input';
 import Button from '../Atom/Button';
 import Navbar from './Navbar';
 import {useRecoilState} from 'recoil';
-import {emojiData} from '../Atom/Atom'
+import {emojiData} from '../Recoil/Atom'
 
 export default function EmojiSearch() {
   const [search, setSearch] = useState('');
@@ -35,22 +35,26 @@ console.log(dataemoji,'from recoil')
     setEmoji(smilingface);
   }
   function handlebutton1() {
-    alert('show all person');
+    alert('show all grinning');
     let person1 = dataemoji.filter((x) => x.slug.includes('grinning'));
     console.log(person1);
     setEmoji(person1);
   }
   function handlebutton2() {
-    alert('show all sad');
+    alert('show all person');
     let sad1 = dataemoji.filter((x) => x.slug.includes('person'));
     console.log(sad1);
     setEmoji(sad1);
   }
   function handlebutton3() {
-    alert('show taxi');
-    let taxi1 = dataemoji.filter((x) => x.slug.includes('heart'));
-    console.log(taxi1);
-    setEmoji(taxi1);
+    alert('show heart');
+    let heart1 = dataemoji.filter((x) => x.slug.includes('heart'));
+    console.log(heart1);
+    setEmoji(heart1);
+  }
+  function handlebutton4() {
+    alert('all emoji');
+    setEmoji(dataemoji);
   }
 
   return (
@@ -92,6 +96,11 @@ console.log(dataemoji,'from recoil')
                   className={style.smiling}
                   onClick={handlebutton3}
                   text="Heart"
+                />
+                   <Button
+                  className={style.smiling}
+                  onClick={handlebutton4}
+                  text="All Emoji"
                 />
               </span>
 
