@@ -70,21 +70,3 @@ box-shadow: 10px 10px 10px rgb(197, 19, 19) ;
   background-color: greenyellow;
   border-radius: 5px;
 }
-@media only screen and(max-width:450px){
-  .wrap{
-  margin: 0;
-  padding: 0 ;
-  background-image:url('https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/21/Pictures/_d6c5a6cc-8cab-11e8-a23e-bc16ac6b2c17.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  }
-  .Emoji{
-    border: none;
-    height: 30px;
-    background-color: greenyellow;
-    border-radius: 5px;
-  }
-}
-
- 
